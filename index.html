@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dracut Police - Broadcastify</title>
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	<body>
+		<div id="container">
+			<div class="slice">
+				<div class="v-separator"></div>
+				<div id="left-side">
+					<a href="https://www.broadcastify.com/listen/feed/43522" title="Broadcastify Feed"><img class="avatar" src="assets/bcfy_social_logo.png"></a>
+					<div class="name">DRACUT POLICE</div>
+					<div class="desc">
+						24/7 Broadcast of 482.8875mhz
+						<br>
+						<br>
+						Dracut Police Dispatch. Available on the web and through most "Scanner" apps <br>
+						as "Dracut Police"
+					</div>
+					<br>
+					<div class="desc">
+						<strong><a href="https://www.broadcastify.com/listen/feed/43522" title="Broadcastify Feed" class="link-color-1">Broadcastify Feed</a>  |  <a href="https://scannerradio.app" class="link-color-2">ScannerRadio.app</a></strong>
+					</div>
+				</div>
+				<div class="v-separator"></div>
+			</div>
+			<div class="slice">
+				<div class="v-separator"></div>
+				<div id="right-side">
+					<div class="name">INFORMATION</div>
+					<div class="desc">
+						<strong>Signal Path:<br></strong>
+						N9TAX Antenna -> BF-F8HP -> 2.5mm to 3.5mm Aux -> Ground Loop Isolator -> Windows PC (ScannerCast)
+						<br>
+						<br>
+						<strong>Audio Quality:<br></strong>
+						Surprisingly clear signal comes out of the Baofeng BF-F8HP but it can sometime overload with roger beeps / tones.
+						<br>
+						<br>
+						<strong>Issues?:<br></strong>
+						<strong><a href="https://www.broadcastify.com/problem/?feedId=43522" title="Report Issues Here" class="link-color-1">Report Issues Here</a></strong>
+						<br>
+						<br>
+						<div class="small-right"></div>
+					</div>
+					<br>
+					<hr>
+					<br>
+					<div class="name">LATEST UPDATE</div>
+						<div>08.27.2024</div>
+						<ul>
+							<li>Broadcast is created</li>
+						</ul>
+					</div>
+					
+				<div class="v-separator"></div>
+			</div>
+		</div>
+		<div id="extra">
+			<div class="force-left"><span class="name">DPD Live</span> <span id="tagline"></span></div>
+			<div class="force-right">(c) 2024 Joey Mahmah</div>
+		</div>
+
+		<script>
+			const lines = [
+				"24/7 Radio Scanner",
+				"Broadcasting 24/7",
+				"Listen and Learn!"
+			];
+
+			var tagline = document.getElementById("tagline");
+			tagline.innerHTML = lines[Math.floor(Math.random() * lines.length)];
+		</script>
+	</body>
+</html>
